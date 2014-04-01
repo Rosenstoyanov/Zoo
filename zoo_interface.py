@@ -15,6 +15,13 @@ class ZooInterface():
         close_connection()
 
     def accommodate (self, species, name, age, weight):
-        sql_query = "INSERT INTO animalsinZoo VALUES()"
+        sql_query = "INSERT INTO animalsinZoo VALUES(1, species, name, age, gender, weight, 1)"
+        self.cursor.execute(sql_query)
+        close_connection()
+
+    def to_habitat(self, name):
+        sql_query = "DELETE FROM animalsinZoo WHERE name = "name" "
+        self.cursor.execute(sql_query)
+        close_connection()
 
 
