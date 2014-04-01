@@ -1,7 +1,7 @@
 import sqlite3
 
 def create_table_users(cursor):#add
-    cursor.execute('''CREATE TABLE ClassZoo(id INTEGER PRIMARY KEY ASC, capacity REAL, email REAL''')
+    cursor.execute('''CREATE TABLE zoo(id INTEGER PRIMARY KEY ASC, capacity int, budget real)''')
 
 
 conn = sqlite3.connect("animals.db")

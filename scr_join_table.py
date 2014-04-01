@@ -1,7 +1,7 @@
 import sqlite3
 
 def create_table_join_table(cursor):
-    cursor.execute('''CREATE TABLE animalsInZoo(id INTEGER PRIMARY KEY ASC, zooId int, animalId int, name Text, age int, gender Text, weight real)''')
+    cursor.execute('''CREATE TABLE animalsInZoo(animalNumber INTEGER PRIMARY KEY ASC, zooId int, species Text, name Text, age int, gender Text, weight real, isAlive int)''')
 
 conn = sqlite3.connect('animals.db')
 
